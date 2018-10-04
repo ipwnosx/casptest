@@ -1,117 +1,53 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-<title>iPwnOS</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<title>iPwnOSX</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
-
-@font-face { font-family: vv; src: url('vermin_vibes.ttf'); }
-
-@font-face { font-family: vvv; src: url('vermin_vibes_diet.ttf'); }
 
 body{
   margin:0px;
-  background: linear-gradient(to right, #222222, #c644fc, #5856d6);
+  background: linear-gradient(270deg, #111111, #C644FC, #5856D0, #444444);
+background-size: 800% 800%;
 
-background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-}
-}
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-a {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-a {
-  color: black;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes animate {
-  50% {
-  -ms-transform: translate(50%,0);
-    -webkit-transform: translate(50%,0);
-    transform: translate(50%,0);
-    }
-
+-webkit-animation: AnimationName 10s ease infinite;
+-moz-animation: AnimationName 10s ease infinite;
+animation: AnimationName 10s ease infinite;
 
 }
 
-.slider{
-  display:flex;
-  overflow-x: auto;
-  -webkit-overflow-scrolling:touch;
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
-.slider div{
-  flex-shrink:0;
-  width:100px;
-  height:110px;
+.toggle-content {
+	display: none;
 }
 
-
-html, body{overflow:hidden;}
-
-.bg{
-  background-color:#444444;
+.toggle-content.is-visible {
+	display: block;
 }
-
 </style>
 </head>
 <body>
 
-
-  <h5 style="font-family:vvv;margin-left:15px;font-size:12px;margin-bottom:0px;">
+  <h5 style="font-family:arial;margin-left:17px;font-size:12px;background: -webkit-linear-gradient( #FFDB4C, #FFCD02);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
       <script>
       					                                                 var mydate=new Date()
       					                                                 var year=mydate.getYear()
@@ -122,117 +58,85 @@ html, body{overflow:hidden;}
       					                                                   daym="0"+daym
       					                                                 var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
       					                                                 var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
-      					                                                 document.write("<font color='f2f2f2'>"+dayarray[day]+", "+montharray[month]+" "+daym+"<\/font>")
+      					                                                 document.write("<font color='#C644FC'>"+dayarray[day]+", "+montharray[month]+" "+daym+"<\/font>")
       </script>
   <font  color="f2f2f2" class></font>
     </h5>
 
-<h1 style="font-family:vv;font-size:30px;color:#ffffff;margin-left:17px;margin-top:0px;">iPwnOS</h1>
+    <h1 style="font-family:arial;font-size:30px;margin-left:17px;margin-top:0px;background: -webkit-linear-gradient( #1AD6FD, #1D62F0);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">iPwnOSX</h1>
+
+<a href="index.html">
+<i class="fa fa-refresh fa-spin" style="font-size:24px;background: -webkit-linear-gradient( #87FC70, #0BD318);-webkit-background-clip: text;-webkit-text-fill-color: transparent;position:absolute;top:35px;right:40px;"></i>
+</a>
 
 <br>
 
 <center>
-<div style="height:170px;background-color:#444444;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:10px;padding:8px;width:80%;">
-<img style="position: relative;bottom:50px;border-radius:20px;width:100px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img>
-<h2 style="font-family:vv;font-size:17px;color:#ffffff;position: relative;bottom:50px;">iPwnOS</h2>
-<p style="font-family:vvv;font-size:14px;color:#f2f2f2;position: relative;bottom:50px;width:200px;">iPwnOS Is A New Signing Service With Many Apps To Choose From!</p>
-</div>
+  <img style="width:150px;border-radius:50%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://pbs.twimg.com/profile_images/1046358065195311104/laxybYOZ_400x400.jpg">
 </center>
 
 <br>
 
-<div class="bg">
+<div class="container">
+  <ul style="margin-left:30%;" class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+    <li><a data-toggle="pill" href="#menu1">Install</a></li>
+  </ul>
 
-  <br>
-
-<center>
-  <h2 style="font-family:vv;font-size:20px;color:white;">Featured</h2>
-</center>
-
-<div class="slider">
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <br>
+      <center><a style="padding:10px;border-radius:5px;background: -webkit-linear-gradient( #1AD6FD, #1D62F0);text-decoration:none;width:90%;color:white;" href="http://get.udid.io">Get UDID</a></center>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <br>
+      <center>
+      <div  style="text-align: justify;width:90%;padding-bottom:20px;padding-top:5px;border-radius:10px;background: -webkit-linear-gradient( #FF5E3A, #FF2A68);">
+         <span onclick="location='App Link'"> <p style="text-decoration:none;margin:0px;" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:arial;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-right:15px; width:60px;border-radius:20%;" align="left" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg">App Name</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:arial;font-size:12px;color:#f2f2f2;text-decoration:none;">Category</p></span>
+      </div>
+      </center>
+      <br>
+      <center>
+      <div  style="text-align: justify;width:90%;padding-bottom:20px;padding-top:5px;border-radius:10px;background: -webkit-linear-gradient( #1AD6FD, #1D62F0);">
+         <span onclick="location='App Link'"> <p style="text-decoration:none;margin:0px;" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:arial;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-right:15px; width:60px;border-radius:20%;" align="left" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg">App Name</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:arial;font-size:12px;color:#f2f2f2;text-decoration:none;">Category</p></span>
+      </div>
+      </center>
+      <br>
+      <center>
+      <div  style="text-align: justify;width:90%;padding-bottom:20px;padding-top:5px;border-radius:10px;background: -webkit-linear-gradient( #87FC70, #0BD318);">
+         <span onclick="location='App Link'"> <p style="text-decoration:none;margin:0px;" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:arial;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-right:15px; width:60px;border-radius:20%;" align="left" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg">App Name</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:arial;font-size:12px;color:#f2f2f2;text-decoration:none;">Category</p></span>
+      </div>
+      </center>
+      <br>
+      <center>
+      <div  style="text-align: justify;width:90%;padding-bottom:20px;padding-top:5px;border-radius:10px;background: -webkit-linear-gradient( #FFDB4C, #FFCD02);">
+         <span onclick="location='App Link'"> <p style="text-decoration:none;margin:0px;" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:arial;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-right:15px; width:60px;border-radius:20%;" align="left" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg">App Name</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:arial;font-size:12px;color:#f2f2f2;text-decoration:none;">Category</p></span>
+      </div>
+      </center>
+      <br>
+    </div>
+  </div>
 </div>
 
-<br>
 
-<center>
-  <h2 style="font-family:vv;font-size:20px;color:white;">iPwnOS Apps</h2>
-</center>
-
-<div class="slider">
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-</div>
-
-<br>
-
-<center>
-  <h2 style="font-family:vv;font-size:20px;color:white;">Appstore Apps</h2>
-</center>
-
-<div class="slider">
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-
-          <div><span onclick="location='index.html'"><img style="width:80px;border-radius:20px;margin:10px;" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg"></img></span></div>
-</div>
-
-</div>
 </body>
 </html>
+
+
+
+
 
 <script type="text/javascript">
 var iWebkit;if(!iWebkit){iWebkit=window.onload=function(){function fullscreen(){var a=document.getElementsByTagName("a");for(var i=0;i<a.length;i++){if(a[i].className.match("noeffect")){}else{a[i].onclick=function(){window.location=this.getAttribute("href");return false}}}}function hideURLbar(){window.scrollTo(0,0.9)}iWebkit.init=function(){fullscreen();hideURLbar()};iWebkit.init()}}
