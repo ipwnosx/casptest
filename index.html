@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-<title>iPwnOSX</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
 
+
+	<title>iPwnOSX</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<style>
 body{
   margin:0px;
   background: linear-gradient(270deg, #111111, #C644FC, #5856D0, #444444);
@@ -19,8 +39,6 @@ background-size: 800% 800%;
 animation: AnimationName 10s ease infinite;
 
 }
-
-@font-face { font-family: st; src: url('vermin_vibes.ttf'); }
 
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
@@ -37,108 +55,139 @@ animation: AnimationName 10s ease infinite;
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-
-.toggle-content {
-	display: none;
-}
-
-.toggle-content.is-visible {
-	display: block;
-}
 </style>
 </head>
 <body>
 
-  <h5 style="font-family:arial;margin-left:17px;font-size:12px;background: -webkit-linear-gradient( #FFDB4C, #FFCD02);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-      <script>
-      					                                                 var mydate=new Date()
-      					                                                 var year=mydate.getYear()
-      					                                                 var day=mydate.getDay()
-      					                                                 var month=mydate.getMonth()
-      					                                                 var daym=mydate.getDate()
-      					                                                 if (daym<10)
-      					                                                   daym="0"+daym
-      					                                                 var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
-      					                                                 var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
-      					                                                 document.write("<font color='#C644FC'>"+dayarray[day]+", "+montharray[month]+" "+daym+"<\/font>")
-      </script>
-  <font  color="f2f2f2" class></font>
-    </h5>
-
-    <h1 style="font-family:arial;font-size:30px;margin-left:17px;margin-top:0px;background: -webkit-linear-gradient( #1AD6FD, #1D62F0);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">iPwnOSX</h1>
-
-<a href="index.html">
-<i class="fa fa-refresh fa-spin" style="font-size:24px;background: -webkit-linear-gradient( #87FC70, #0BD318);-webkit-background-clip: text;-webkit-text-fill-color: transparent;position:absolute;top:35px;right:40px;"></i>
-</a>
-
-<br>
-
-<center>
-  <img style="width:150px;border-radius:50%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://pbs.twimg.com/profile_images/1046358065195311104/laxybYOZ_400x400.jpg">
-</center>
-
-<br>
-
-<div class="container">
-  <ul style="margin-left:30%;" class="nav nav-pills">
-    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-    <li><a data-toggle="pill" href="#menu1">Install</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <br>
-      <center><a style="padding:10px;border-radius:5px;background: -webkit-linear-gradient( #1AD6FD, #1D62F0);text-decoration:none;width:90%;color:white;" href="http://get.udid.io">Get UDID</a></center>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <br>
-      <center>
-      <div  style="text-align: justify;width:90%;padding-bottom:20px;padding-top:5px;border-radius:10px;background: -webkit-linear-gradient( #FF5E3A, #FF2A68);">
-         <span onclick="location='App Link'"> <p style="text-decoration:none;margin:0px;" >
-      <h1 style="margin-left:5%;margin-top:10px;font-family:arial;font-size:15px;color:#ffffff;text-decoration:none;"  >
-      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-right:15px; width:60px;border-radius:20%;" align="left" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg">App Name</h1>
-      <p style="margin-left:15%;margin-top:4px;font-family:arial;font-size:12px;color:#f2f2f2;text-decoration:none;">Category</p></span>
-      </div>
-      </center>
-      <br>
-      <center>
-      <div  style="text-align: justify;width:90%;padding-bottom:20px;padding-top:5px;border-radius:10px;background: -webkit-linear-gradient( #1AD6FD, #1D62F0);">
-         <span onclick="location='App Link'"> <p style="text-decoration:none;margin:0px;" >
-      <h1 style="margin-left:5%;margin-top:10px;font-family:arial;font-size:15px;color:#ffffff;text-decoration:none;"  >
-      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-right:15px; width:60px;border-radius:20%;" align="left" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg">App Name</h1>
-      <p style="margin-left:15%;margin-top:4px;font-family:arial;font-size:12px;color:#f2f2f2;text-decoration:none;">Category</p></span>
-      </div>
-      </center>
-      <br>
-      <center>
-      <div  style="text-align: justify;width:90%;padding-bottom:20px;padding-top:5px;border-radius:10px;background: -webkit-linear-gradient( #87FC70, #0BD318);">
-         <span onclick="location='App Link'"> <p style="text-decoration:none;margin:0px;" >
-      <h1 style="margin-left:5%;margin-top:10px;font-family:arial;font-size:15px;color:#ffffff;text-decoration:none;"  >
-      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-right:15px; width:60px;border-radius:20%;" align="left" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg">App Name</h1>
-      <p style="margin-left:15%;margin-top:4px;font-family:arial;font-size:12px;color:#f2f2f2;text-decoration:none;">Category</p></span>
-      </div>
-      </center>
-      <br>
-      <center>
-      <div  style="text-align: justify;width:90%;padding-bottom:20px;padding-top:5px;border-radius:10px;background: -webkit-linear-gradient( #FFDB4C, #FFCD02);">
-         <span onclick="location='App Link'"> <p style="text-decoration:none;margin:0px;" >
-      <h1 style="margin-left:5%;margin-top:10px;font-family:arial;font-size:15px;color:#ffffff;text-decoration:none;"  >
-      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-right:15px; width:60px;border-radius:20%;" align="left" src="https://pbs.twimg.com/profile_images/1022617409700552726/p9caQPCi_400x400.jpg">App Name</h1>
-      <p style="margin-left:15%;margin-top:4px;font-family:arial;font-size:12px;color:#f2f2f2;text-decoration:none;">Category</p></span>
-      </div>
-      </center>
-      <br>
-    </div>
-  </div>
-</div>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form name = "myform" class="login100-form validate-form">
+					<span class="login100-form-title p-b-26">
+						iPwnOSX
+					</span>
 
 
-</body>
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input type="text" name="username" class="input100" type="text" name="email">
+						<span class="focus-input100" data-placeholder="Username"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input type="password" name="pword" class="input100" type="password" name="pass">
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button type="button" name="Submit" onclick= "validate()" class="login100-form-btn">
+								Login
+							</button>
+						</div>
+					</div>
+					<br>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body >
 </html>
 
+<script type = "text/javascript">
+
+var count = 2;
+function validate() {
+var un = document.myform.username.value;
+var pw = document.myform.pword.value;
+var valid = false;
+var unArray = ["Admin", "CaspXD"];
+var pwArray = ["123456", "monkeys9v"];
+for (var i=0; i <unArray.length; i++) {
+if ((un == unArray[i]) && (pw == pwArray[i])) {
+valid = true;
+break;
+}
+}
+if (valid) {
+alert ("Success!");
+window.location = "app.html";
+return false;
+}
+var t = " tries";
+if (count == 1) {t = " try"}
+if (count >= 1) {
+alert ("Invalid username and/or password.  You have " + count + t + " left.");
+document.myform.username.value = "";
+document.myform.pword.value = "";
+setTimeout("document.myform.username.focus()", 25);
+setTimeout("document.myform.username.select()", 25);
+count --;
+}
+else {
+alert ("Still incorrect! You have no more tries left!");
+document.myform.username.value = "No more tries allowed!";
+document.myform.pword.value = "";
+document.myform.username.disabled = true;
+document.myform.pword.disabled = true;
+return false;
+}
+}
+</script>
+<script type="text/javascript" >
+
+window.onload = function(){
+	trigger();
+}
+
+function trigger(){
+var trig = document.getElementById("trig");
+var id = trig.getAttribute("page");
+trig.text += id;
+alert(id);
+var one = document.getElementById("Column1");
+var two = document.getElementById("Column2");
+var three = document.getElementById("Column3");
+if (id =="1") {
+	var el1 = one.getElementsByTagName("div");
+	var el2 = two.getElementsByTagName("div");
+	var el3 = three.getElementsByTagName("div");
+	el1[0].style.background = "#666";
+	el2[1].style.background = "#666";
+	el3[2].style.background = "#666";
+} else if (id =="2") {
+	//  and so on for every page
+}
+
+}
 
 
-
+</script>
 
 <script type="text/javascript">
 var iWebkit;if(!iWebkit){iWebkit=window.onload=function(){function fullscreen(){var a=document.getElementsByTagName("a");for(var i=0;i<a.length;i++){if(a[i].className.match("noeffect")){}else{a[i].onclick=function(){window.location=this.getAttribute("href");return false}}}}function hideURLbar(){window.scrollTo(0,0.9)}iWebkit.init=function(){fullscreen();hideURLbar()};iWebkit.init()}}
